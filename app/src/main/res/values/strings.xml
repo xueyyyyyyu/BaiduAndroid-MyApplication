@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lesson9Demo</string>
+    <string name="app_name">myApp</string>
     <string name="title_home">主页</string>
     <string name="title_video">视频</string>
     <string name="title_mine">我的</string>
