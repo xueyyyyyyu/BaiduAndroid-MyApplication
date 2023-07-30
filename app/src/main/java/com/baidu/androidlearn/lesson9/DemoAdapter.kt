@@ -5,10 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-
 /**
  * @author: xiejikun
  * @since: 2023/7/7
+ * lesson4
  */
 class DemoAdapter : RecyclerView.Adapter<DemoViewHolder> {
 

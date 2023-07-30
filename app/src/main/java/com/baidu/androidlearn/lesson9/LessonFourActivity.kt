@@ -39,6 +39,8 @@ class LessonFourActivity : AppCompatActivity() {
 
         // 添加RecycleView
 //        addRecycleView()
+
+        showFrameAnimLoading()
     }
 
     /**
