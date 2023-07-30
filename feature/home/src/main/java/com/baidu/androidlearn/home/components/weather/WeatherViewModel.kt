@@ -23,7 +23,7 @@ class WeatherViewModel: ViewModel() {
     }
     val temperature: LiveData<String> = _temperature
 
-    @MainThread
+    /*@MainThread
     fun refreshWeather() {
         viewModelScope.launch {
             repository.getCurrentWeather().collect {
@@ -31,5 +31,21 @@ class WeatherViewModel: ViewModel() {
                 _temperature.value = "${it.temperature}°"
             }
         }
+    }*/
+
+    @MainThread
+    fun gotoWeather() {
+        // todo 跳转到天气页面
+        // 通过 Navigation 组件的 NavDirections 来定义导航的目标
+        //val directions = WeatherFragmentDirections.actionWeatherFragmentToWeatherDetailFragment()
+        // 设置 LiveData 的值，通知界面进行导航
+        //_navigateToWeather.value = directions
     }
+
+    @MainThread
+    fun onNavigationComplete() {
+        // 导航完成后，将 LiveData 的值设置为 null
+        //_navigateToWeather.value = null
+    }
+
 }

@@ -14,7 +14,7 @@ class WeatherComponent(
     override fun onCreate(owner: LifecycleOwner) {
         super.onCreate(owner)
         binding.textTemperature.setOnClickListener {
-            viewModel.refreshWeather()
+            viewModel.gotoWeather()
         }
     }
 
