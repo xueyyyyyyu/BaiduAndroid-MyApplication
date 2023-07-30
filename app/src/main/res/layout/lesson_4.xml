@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!-- TextView 示例   -->
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="center"-->
+    <!--        android:maxLines="1"-->
+    <!--        android:text="文本内容文本内容文本内容"-->
+    <!--        android:textColor="#ff0000"-->
+    <!--        android:textSize="30dp"-->
+    <!--        android:textStyle="bold|italic" />-->
+
+    <!-- frame动画 示例   -->
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_loading"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/frame_anim" />-->
+
+    <!-- 补间动画 示例   -->
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_loading"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/loading" />-->
+
+    <!-- 补间动画 示例   -->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/iv_loading"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:background="@drawable/loading" />-->
+
+    <!-- 属性动画 示例   -->
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#ff0000" />
+
+    <!-- 属性动画 示例   -->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="start"
+        android:onClick="startAnim"/>
+
+    <!-- RecyclerView 示例   -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_demo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
