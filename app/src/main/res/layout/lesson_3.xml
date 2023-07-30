@@ -13,6 +13,5 @@
         android:layout_height="wrap_content"
         android:onClick="showToast"
         android:text="click me"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

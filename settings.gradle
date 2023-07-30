@@ -1,8 +1,8 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
@@ -12,5 +12,12 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Lesson7Demo"
+rootProject.name = "Lesson9Demo"
 include ':app'
+include ':feature:home'
+include ':feature:video'
+include ':feature:mine'
+include ':core:mvvm'
+include ':data:feed'
+include ':data:weather'
+include ':data:news'
