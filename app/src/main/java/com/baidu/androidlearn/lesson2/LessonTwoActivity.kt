@@ -3,6 +3,7 @@ package com.baidu.androidlearn.lesson2
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import com.baidu.androidlearn.R
 
 class LessonTwoActivity : AppCompatActivity() {
@@ -22,4 +23,6 @@ class LessonTwoActivity : AppCompatActivity() {
         super.onPause()
         Log.v("LessonTwoActivity","Main activity onPause ; time = ${System.currentTimeMillis()}")
     }
+
+    fun showToast(view: View) {}
 }
