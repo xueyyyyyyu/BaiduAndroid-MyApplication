@@ -36,10 +36,7 @@ class WeatherViewModel: ViewModel() {
     @MainThread
     fun gotoWeather() {
         // todo 跳转到天气页面
-        // 通过 Navigation 组件的 NavDirections 来定义导航的目标
-        //val directions = WeatherFragmentDirections.actionWeatherFragmentToWeatherDetailFragment()
-        // 设置 LiveData 的值，通知界面进行导航
-        //_navigateToWeather.value = directions
+        // 点击天气组件跳转到一个新的activity
     }
 
     @MainThread
