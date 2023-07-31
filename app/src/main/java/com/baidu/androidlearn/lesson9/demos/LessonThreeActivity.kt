@@ -1,10 +1,10 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
+import com.baidu.androidlearn.lesson9.R
 
 class LessonThreeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

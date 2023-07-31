@@ -1,4 +1,4 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import android.app.Activity
 import android.content.ComponentName
@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
 import android.widget.Button
+import com.baidu.androidlearn.lesson9.R
 
 
 class LessonFiveActivity : Activity() {

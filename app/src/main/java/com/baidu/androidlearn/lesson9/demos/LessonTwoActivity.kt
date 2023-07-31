@@ -1,8 +1,9 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.baidu.androidlearn.lesson9.R
 
 class LessonTwoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

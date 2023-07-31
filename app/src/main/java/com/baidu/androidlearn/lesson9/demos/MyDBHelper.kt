@@ -1,4 +1,4 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

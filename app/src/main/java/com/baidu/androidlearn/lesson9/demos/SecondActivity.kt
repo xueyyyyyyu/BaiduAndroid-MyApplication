@@ -1,8 +1,9 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import android.app.Activity
 import android.os.Bundle
 import android.util.Log
+import com.baidu.androidlearn.lesson9.R
 
 class SecondActivity: Activity() {
 

@@ -1,4 +1,4 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import android.app.Activity
 import android.content.ContentValues
@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import com.baidu.androidlearn.lesson9.R
 import java.io.*
 
 

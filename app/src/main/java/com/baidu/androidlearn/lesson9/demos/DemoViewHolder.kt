@@ -1,9 +1,10 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.baidu.androidlearn.lesson9.R
 
 /**
  * 用于复用的ViewHolder

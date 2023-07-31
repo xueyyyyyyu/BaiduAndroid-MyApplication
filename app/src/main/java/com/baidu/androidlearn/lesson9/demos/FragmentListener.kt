@@ -1,4 +1,4 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 interface FragmentListener {
     fun test()

@@ -1,10 +1,11 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import android.app.Activity
 import android.content.Intent
 import android.media.SoundPool
 import android.os.Bundle
 import android.widget.Button
+import com.baidu.androidlearn.lesson9.R
 
 class LessonSixActivity: Activity() {
 

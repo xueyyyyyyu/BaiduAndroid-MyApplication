@@ -1,4 +1,4 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import android.animation.Animator
 import android.animation.ValueAnimator
@@ -15,6 +15,7 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.baidu.androidlearn.lesson9.R
 
 class LessonFourActivity : AppCompatActivity() {
 

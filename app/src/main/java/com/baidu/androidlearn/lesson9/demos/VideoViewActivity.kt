@@ -1,10 +1,11 @@
-package com.baidu.androidlearn.lesson9
+package com.baidu.androidlearn.lesson9.demos
 
 import android.app.Activity
 import android.net.Uri
 import android.os.Bundle
 import android.widget.MediaController
 import android.widget.VideoView
+import com.baidu.androidlearn.lesson9.R
 
 class VideoViewActivity: Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
