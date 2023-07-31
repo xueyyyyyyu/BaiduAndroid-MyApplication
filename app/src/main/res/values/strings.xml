@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidLearn</string>
+    <string name="app_name">My Application</string>
     <string name="title_home">主页</string>
     <string name="title_video">视频</string>
     <string name="title_mine">我的</string>
