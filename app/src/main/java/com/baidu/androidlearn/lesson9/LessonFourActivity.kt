@@ -15,7 +15,6 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.baidu.androidlearn.home.components.news.DemoAdapter
 
 class LessonFourActivity : AppCompatActivity() {
 
@@ -50,7 +49,7 @@ class LessonFourActivity : AppCompatActivity() {
     private fun addRecycleView() {
         // 从布局中进行获取
         recycleView = findViewById(R.id.rv_demo)
-        adapter = com.baidu.androidlearn.home.components.news.DemoAdapter(createDemoDate())
+        adapter = DemoAdapter(createDemoDate())
         recycleView?.adapter = adapter
         recycleView?.layoutManager = LinearLayoutManager(this)
     }

@@ -39,7 +39,7 @@
         android:ellipsize="end"
         android:textSize="16dp"
         android:maxLines="4"
-        android:text="悟空集齐了七龙珠后，向神龙许了想要挑战宇宙最强强者的愿望"
+        android:text="内容xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cover"
