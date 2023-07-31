@@ -1,35 +1,69 @@
 package com.baidu.androidlearn.lesson9
 
-import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.baidu.androidlearn.lesson9.databinding.ActivityMainBinding
+import android.os.Bundle
+import android.widget.ImageView
+import android.widget.RelativeLayout
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    // 其他代码
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val home = findViewById<RelativeLayout>(R.id.home)
+        val video = findViewById<RelativeLayout>(R.id.video)
+        val user = findViewById<RelativeLayout>(R.id.user)
+        val homeText = findViewById<TextView>(R.id.hometext)
+        val homeIcon = findViewById<ImageView>(R.id.homeicon)
+        val videoText = findViewById<TextView>(R.id.videotext)
+        val videoIcon = findViewById<ImageView>(R.id.videoicon)
+        val userText = findViewById<TextView>(R.id.usertext)
+        val userIcon = findViewById<ImageView>(R.id.usericon)
 
-        val navView: BottomNavigationView = binding.navView
+        // 设置默认显示的 Fragment
+        showFragment(HomeFragment())
+        setSelectedNavItem(homeText, homeIcon)
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_video, R.id.navigation_mine
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        // 导航栏点击事件监听
+        home.setOnClickListener {
+            showFragment(HomeFragment())
+            setSelectedNavItem(homeText, homeIcon)
+            clearSelectedNavItem(videoText, videoIcon)
+            clearSelectedNavItem(userText, userIcon)
+        }
+        video.setOnClickListener {
+            showFragment(VideoFragment())
+            setSelectedNavItem(videoText, videoIcon)
+            clearSelectedNavItem(homeText, homeIcon)
+            clearSelectedNavItem(userText, userIcon)
+        }
+        user.setOnClickListener {
+            showFragment(UserFragment())
+            setSelectedNavItem(userText, userIcon)
+            clearSelectedNavItem(homeText, homeIcon)
+            clearSelectedNavItem(videoText, videoIcon)
+        }
+    }
+
+    private fun showFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment, fragment)
+            .commit()
+    }
+    // 其他代码
+
+    private fun setSelectedNavItem(textView: TextView, imageView: ImageView) {
+        textView.isSelected = true
+        imageView.isSelected = true
+    }
+
+    private fun clearSelectedNavItem(textView: TextView, imageView: ImageView) {
+        textView.isSelected = false
+        imageView.isSelected = false
     }
 }
