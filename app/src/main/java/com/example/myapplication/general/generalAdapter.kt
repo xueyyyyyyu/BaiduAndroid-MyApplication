@@ -35,7 +35,7 @@ class generalAdapter(
                 .apply(
                     RequestOptions()
                         .placeholder(R.drawable.placeholder_image) // 设置占位符图片，防止加载过程中出现空白
-                        .error(R.drawable.error_image) // 设置加载失败时显示的错误图片
+                        .error(R.drawable.water) // 设置加载失败时显示的错误图片
                 )
                 .transition(DrawableTransitionOptions.withCrossFade()) // 设置加载图片的过渡效果
                 .into(cover) // 将加载的图片显示在cover ImageView中
